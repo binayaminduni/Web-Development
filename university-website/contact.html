@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Edinburgh National University</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <h2>Edinburgh National University</h2>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="box">
+  <h1>Contact Us</h1>
+  <p><b>Address:</b> 123 University Road, Edinburgh</p>
+  <p><b>Phone:</b> +44 131 123 4567</p>
+  <p><b>Email:</b> info@edinburgh-national.edu</p>
+
+  <h2>Send us a message</h2>
+  <form onsubmit="return sendMessage()">
+    <p>Your Name:</p>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <p>Your Email:</p>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <p>Your Message:</p>
+    <textarea id="message" placeholder="Write your message" required></textarea>
+    <br><br>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<script>
+function sendMessage() {
+  alert("Thank you! Your message has been sent.");
+  return false;
+}
+</script>
+</body>
+</html>
